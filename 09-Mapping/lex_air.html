@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_b94684e6bb6b45d09c42f2a2225d7287 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b94684e6bb6b45d09c42f2a2225d7287" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_b94684e6bb6b45d09c42f2a2225d7287 = L.map(
+                                  'map_b94684e6bb6b45d09c42f2a2225d7287',
+                                  {center: [38.034,-84.5],
+                                  zoom: 4,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_d3cf6651facd4f6bac3a633b87921e37 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_b94684e6bb6b45d09c42f2a2225d7287);
+        
+    
+            var circle_marker_545f51d6de1d4dd8945e25fbbec3379b = L.circleMarker(
+                [38.0364990234375,-84.60590362548828],
+                {
+  "bubblingMouseEvents": true,
+  "color": "DarkCyan",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "DarkCyan",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b94684e6bb6b45d09c42f2a2225d7287);
+            
+    
+            var popup_fe4ac60ae6f7478ea2ef7725ffebb3fa = L.popup({maxWidth: '300'});
+
+            
+                var html_6e229cd703c941c88bae06645c129f77 = $('<div id="html_6e229cd703c941c88bae06645c129f77" style="width: 100.0%; height: 100.0%;">Lexington KY (LEX)</div>')[0];
+                popup_fe4ac60ae6f7478ea2ef7725ffebb3fa.setContent(html_6e229cd703c941c88bae06645c129f77);
+            
+
+            circle_marker_545f51d6de1d4dd8945e25fbbec3379b.bindPopup(popup_fe4ac60ae6f7478ea2ef7725ffebb3fa);
+
+            
+        
+    
+            var circle_marker_316a355f94cf4832912b1c6d91afc039 = L.circleMarker(
+                [33.63669967651367,-84.4281005859375],
+                {
+  "bubblingMouseEvents": true,
+  "color": "MidnightBlue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "MidnightBlue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b94684e6bb6b45d09c42f2a2225d7287);
+            
+    
+            var popup_c46c9ffcde954adb905b7cbbce9ea989 = L.popup({maxWidth: '300'});
+
+            
+                var html_599c33a1f7d94c948e982cd0755b5d60 = $('<div id="html_599c33a1f7d94c948e982cd0755b5d60" style="width: 100.0%; height: 100.0%;">Atlanta(ATL)</div>')[0];
+                popup_c46c9ffcde954adb905b7cbbce9ea989.setContent(html_599c33a1f7d94c948e982cd0755b5d60);
+            
+
+            circle_marker_316a355f94cf4832912b1c6d91afc039.bindPopup(popup_c46c9ffcde954adb905b7cbbce9ea989);
+
+            
+        
+</script>
